@@ -43,6 +43,7 @@ export const Main = () => {
         dispatch(getFromFireStore("users"))
         console.log("users", users)
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     const handleLogin = () => {
         clearErrors();
@@ -136,12 +137,12 @@ export const Main = () => {
     }
 
 
-    const handleLogout = () => {
-        firebase.auth().signOut();
-        console.log("i happened")
-        history.push("/")
+    // const handleLogout = () => {
+    //     firebase.auth().signOut();
+    //     console.log("i happened")
+    //     history.push("/")
 
-    }
+    // }
 
     const authListener = () => {
         firebase.auth().onAuthStateChanged(user => {

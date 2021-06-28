@@ -27,12 +27,6 @@ export const gotUsers = (data) => {
 
 
 
-const addUser = (data) => {
-    return {
-        type: ADD_USER,
-        payload: data
-    }
-}
 
 
 export const setUserData = (data) => {

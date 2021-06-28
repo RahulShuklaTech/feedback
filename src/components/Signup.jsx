@@ -1,19 +1,15 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
-import { getFromFireStore } from '../actions/userActions';
+import React from 'react'
+
 import "./styles/LoginStyle.css"
 export const Signup = (props) => {
     // const {users} = useSelector(state => state) 
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
     const {
         email,
         setEmail,
         password,
         setPassword,
-        handleLogin,
         handleSignUp,
-        hasAccount,
-        setHasAccount,
         emailError,
         passwordError,
         userName,
